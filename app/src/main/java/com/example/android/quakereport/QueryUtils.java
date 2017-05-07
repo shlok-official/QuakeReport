@@ -62,7 +62,10 @@ public class QueryUtils {
                 String place = properties.getString("place");
                 //String time = properties.getString("time");
                 long time = properties.getLong("time");
-                earthquakes.add(new EarthquakeList(mag,place,time));
+                String url = properties.getString("url");
+                // Create a new {@link Earthquake} object with the magnitude, location, time,
+                // and url from the JSON response.
+                earthquakes.add(new EarthquakeList(mag,place,time,url));
             }
 
 

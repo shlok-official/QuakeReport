@@ -176,4 +176,6 @@ public class EarthquakeListAdapter extends ArrayAdapter<EarthquakeList> {
         return ContextCompat.getColor(getContext(), magnitudeColorResourceId);
     }
 
+
+
 }
